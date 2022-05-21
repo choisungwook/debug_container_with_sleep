@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: debug-demo
+  namespace: default
+  labels:
+    app: debug-demo
+spec:
+  containers:
+  - name: MYAPP
+    image: "test:v1"
+    command:
+      - "/usr/bin/env"
+    args:
+      - /bin/bash
+      - -c
+      - "while true; echo sleep; sleep 2; done"
+  restartPolicy: Always
