@@ -1,4 +1,4 @@
-from module import print_hello
+from module import test1
 
 if __name__=="__main__":
-    print_hello()
+    test1.print_hello()
