@@ -7,7 +7,7 @@ metadata:
     app: debug-demo
 spec:
   containers:
-  - name: MYAPP
+  - name: main
     image: "test:v1"
     command:
       - "/usr/bin/env"
