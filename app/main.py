@@ -1,4 +1,8 @@
-from module.hello.world import print_hello
+from fastapi import FastAPI
 
-if __name__=="__main__":
-    print_hello()
+
+app = FastAPI()
+
+@app.get("/")
+def read_root():
+    return {"Hello": "World"}
