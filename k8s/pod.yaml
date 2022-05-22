@@ -12,7 +12,7 @@ spec:
     command:
       - "/usr/bin/env"
     args:
-      - /bin/bash
-      - -c
-      - "while true; echo sleep; sleep 2; done"
+      - "/bin/bash"
+      - "-c"
+      - "while true;do echo sleep; sleep 2; done"
   restartPolicy: Always
